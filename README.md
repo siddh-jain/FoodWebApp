@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Food Delivery Web App
+This is a basic food delivery web app built using MERN stack with all the basic functionalities such as 
++ Registration & Login for both buyer and vendor
++ Option to view and edit profile for buyer and vendor
++ Vendor can add, delete and edit food items.
++ Vendor can see the list of orders and can either accept them or reject them
++ Buyer can see,search and filter food items based on Veg/Non-Veg and price range.
++ Buyer can't order from shops that aren't open at that time
++ Buyer can order a food item of his/her choice by clicking on the order button and specifying the quantity of food item and add-ons if any after which the required amount of money gets deducted from the wallet
++ If the wallet balance is less than bill amount, order doesn't get placed. Buyer can add money to wallet and then place the order again
++ Buyer can click on Pick up order button once he/she picks it up and this completes the order.
++ Upon completing the order, he/she can rate it as well from 1 to 5. This updates the rating for that food item
++ No vendor can accept/cook more than 10 orders at a time
++ Vendor can see stats like Top 5 Items that have been sold, Counts for- Orders Placed,Pending Orders,Completed Orders
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Bonus
++ Email to the buyers on acceptance/rejection of their order buy creating a common email id stating that "<vendor-name>" accepted your order.
++ Deployed the website with 
+    - frontend special-cakes.surge.sh
+    - backend  at:https://siddhfoodwebapp.herokuapp.com/
+## Running the boilerplate
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Run Express Backend:
+```
+cd backend/
+npm install
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Run React Frontend:
+```
+cd frontend
+npm install/
+npm start
+```
 
-### `npm test`
+Navigate to [http://localhost:3000/](http://localhost:3000/) in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
